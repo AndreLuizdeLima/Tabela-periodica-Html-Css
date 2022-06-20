@@ -1,6 +1,6 @@
-# Tabela_periodica_html_css
+# Tabela Periódica Html Css
 
-PT-BR --> Uma tabela periódica feita em html e css.
+PT-BR --> Uma tabela periódica feita em Html e Css.
 
 Basicamente usei table e estilizei usando CSS tive preferencia de usar apenas um arquivo nesse projeto pois seria usado em sala de aula e mais arquivos
 poderia gerar complicações.
