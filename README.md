@@ -1,4 +1,4 @@
-<color="#ffffff"> # Tabela_periodica_html_css </color>
+# Tabela_periodica_html_css
 
 PT-BR --> Uma tabela periódica feita em html e css.
 
