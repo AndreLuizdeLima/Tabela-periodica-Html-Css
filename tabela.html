@@ -1,0 +1,393 @@
+<!DOCTYPE html> <!--By: Andre Luiz de Lima nº 2  3ia 2022-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela periódica</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0
+}
+
+header{
+    background-color: #000000;
+    color: #fff;
+    font-size: 200%;
+    height: 50px;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.elements,.metaisTransition, .hidro, .alcalinos, .alcalinosTerra, .trasicao, .ametais,
+    .semeMetais, .nobre, .sinteticos, .lantanideos, .actinideos{
+        border: 1px solid #000; 
+        text-align: center;
+        padding: 5px;
+}
+
+table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+td{
+    width: 20px;
+    height: 20px;
+}
+
+.tamanho{
+    width: 20px;
+    height: 20px;
+}
+
+th{
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.familia{
+    font-size:12px;
+    
+}
+
+.hidro{
+    background-color: #32CD32;
+}
+
+.hidro:hover{
+    background-color: rgba(50,205,50,0.4)
+}
+
+.alcalinos{
+    background-color: #ffdb58;
+}
+
+.alcalinos:hover{
+    background-color: rgba(255,216,88,0.4)
+}
+
+.alcalinosTerra{
+    background-color:#ffff00;
+}
+
+.alcalinosTerra:hover{
+    background-color: rgba(255,255,0,0.4);
+}
+
+.trasicao{
+    background-color:#a2ebeb;
+}
+
+.trasicao:hover{
+    background-color: rgba(162,235,235,0.4);
+}
+
+.ametais{
+    background-color: #99ee99;
+}
+
+.ametais:hover{
+    background-color: rgba(144,238,144,0.4);
+}
+
+.semeMetais{
+    background-color: #26caed;
+}
+
+.semeMetais:hover{
+    background-color: rgba(38,202,237,0.4)
+}
+
+.nobre{
+    background-color: #a3555e;
+}
+
+.nobre:hover{
+    background-color: rgba(163,85,94,0.4)
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.metaisTransition{
+    background-color: #ffa500;
+}
+
+.metaisTransition:hover{
+    background-color:rgba(255,165,0,0.4)
+}
+
+.sinteticos{
+    background-color:#d3d3d3;
+}
+
+.sinteticos:hover{
+    background-color:rgba(211,211,211,0.4)
+}
+
+.lantanideos{
+    background-color: #e8dcca;
+}
+
+.lantanideos{
+    background-color: rgba(232,220,202,0.4);
+}
+
+.actinideos{
+    background-color: #c3a06e;
+}
+
+.actinideos:hover{
+    background-color: rgba(195,160,110,0.4)
+}
+
+input{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.text{
+    margin-left: 30px;
+}
+
+.legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+</head>
+<body>
+    <header>Tabela Periódica</header>
+    <table cellspacing="1"> 
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+        </tr>
+        <tr class="familia">
+            <th></th>
+            <th>1A</th>
+            <th>2A</th>
+            <th>3B</th>
+            <th>4B</th>
+            <th>5B</th>
+            <th>6B</th>
+            <th>7B</th>
+            <th>8B</th>
+            <th>8B</th>
+            <th>8B</th>
+            <th>1B</th>
+            <th>2B</th>
+            <th>3A</th>
+            <th>4A</th>
+            <th>5A</th>
+            <th>6A</th>
+            <th>7A</th>
+            <th>A8 / 0</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td class="hidro"><B>H<sup>1</sup></B><br><a href="https://pt.wikipedia.org/wiki/Hidrog%C3%A9nio" target="_blank">Hidrogênio</a> </td>
+            <td colspan="16" ></td> 
+            <td class="nobre"><B>He<sup>2</sup></B><br><a href="https://pt.wikipedia.org/wiki/H%C3%A9lio" target="_blank">Hélio</a></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td class="alcalinos"><B>Li<sup>3</sup></B><br><a href="https://pt.wikipedia.org/wiki/L%C3%ADtio" target="_blank">Lítio</a></td>
+            <td class="alcalinosTerra"><b>Be<sup>4</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ber%C3%ADlio" target="_blank">Berílio</a></td>
+            <!-- <td colspan="10"></td> -->
+            <td colspan="2"></td>
+            <td>Legenda:</td>
+            <td class="elements" colspan="2"><b>Nome<sup>Número atómico</sup></b></td> 
+            <td colspan="5"></td>
+            <td class="semeMetais"><b>B<sup>5</sup></b><br><a href="https://pt.wikipedia.org/wiki/Boro" target="_blank">Boro</a></td>
+            <td class="ametais"><b>C<sup>6</sup></b><br><a href="https://pt.wikipedia.org/wiki/Carbono" target="_blank">Carbono</a></td>
+            <td class="ametais"><b>N<sup>7</sup></b><br><a href="https://pt.wikipedia.org/wiki/Azoto" target="_blank">Nitrogênio</a></td>
+            <td class="ametais"><b>O<sup>8</sup></b><br><a href="https://pt.wikipedia.org/wiki/Oxig%C3%A9nio" target="_blank">Oxigênio</td>
+            <td class="ametais"><b>F<sup>9</sup></b><br><a href="https://pt.wikipedia.org/wiki/Fl%C3%BAor" target="_blank">Flúor</a></td>
+            <td class="nobre"><b>Ne<sup>10</sup></B><br><a href="https://pt.wikipedia.org/wiki/N%C3%A9on" target="_blank">Neônio</a></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td class="alcalinos"><b>Na<sup>11</sup></b><br><a href="https://pt.wikipedia.org/wiki/S%C3%B3dio" target="_blank">Sódio</a></td>
+            <td class="alcalinosTerra"><b>Mg<sup>12</sup></b><br><a href="https://pt.wikipedia.org/wiki/Magn%C3%A9sio" target="_blank">Magnésio</a></td>
+            <td colspan="10"></td>
+            <td class="trasicao"><b>Al<sup>13</sup></b><br><a href="https://pt.wikipedia.org/wiki/Alum%C3%ADnio" target="_blank">Alumínio</a></td>
+            <td class="semeMetais"><b>Si<sup>14</sup></b><br><a href="https://pt.wikipedia.org/wiki/Sil%C3%ADcio" target="_blank">Silício</a></td>
+            <td class="ametais"><b>P<sup>15</sup></b><br><a href="https://pt.wikipedia.org/wiki/F%C3%B3sforo" target="_blank">Fósforo</a></td>
+            <td class="ametais"><b>S<sup>16</sup></b><br><a href="https://pt.wikipedia.org/wiki/Enxofre" target="_blank">Enxofre</a></td>
+            <td class="ametais"><b>Cl<sup>17</sup></b><br><a href="https://pt.wikipedia.org/wiki/Cloro" target="_blank">Cloro</a></td>
+            <td class="nobre"><b>AR<sup>18</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%81rgon" target="_blank">Argônio</a></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td class="alcalinos"><b>K<sup>19</sup></b><br><a href="https://pt.wikipedia.org/wiki/Pot%C3%A1ssio" target="_blank">Potássio</a></td>
+            <td class="alcalinosTerra"><b>Ca<sup>20</sup></b><br><a href="https://pt.wikipedia.org/wiki/C%C3%A1lcio" target="_blank">Cálcio</a></td>
+            <td class="metaisTransition"><b>Sc<sup>21</sup></b><br><a href="https://pt.wikipedia.org/wiki/Esc%C3%A2ndio" target="_blank">Escândio</a></td>
+            <td class="metaisTransition"><b>Ti<sup>22</sup></b><br><a href="https://pt.wikipedia.org/wiki/Tit%C3%A2nio" target="_blank">Titânio</a></td>
+            <td class="metaisTransition"><b>V<sup>23</sup></b><br><a href="https://pt.wikipedia.org/wiki/Van%C3%A1dio" target="_blank">Vanádio</a></td>
+            <td class="metaisTransition"><b>Cr<sup>24</sup></b><br><a href="https://pt.wikipedia.org/wiki/Cromo" target="_blank">Cromo</a></td>
+            <td class="metaisTransition"><b>Mn<sup>25</sup></b><br><a href="https://pt.wikipedia.org/wiki/Mangan%C3%AAs" target="_blank">Manganês</a></td>
+            <td class="metaisTransition"><b>Fe<sup>26</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ferro" target="_blank">Ferro</a></td>
+            <td class="metaisTransition"><b>Co<sup>27</sup></b><br><a href="https://pt.wikipedia.org/wiki/Cobalto" target="_blank">Cobalto</a></td>
+            <td class="metaisTransition"><b>Ni<sup>28</sup></b><br><a href="https://pt.wikipedia.org/wiki/N%C3%ADquel" target="_blank">Níquel</a></td>
+            <td class="metaisTransition"><b>Cu<sup>29</sup></b><br><a href="https://pt.wikipedia.org/wiki/Cobre" target="_blank">Cobre</a></td>
+            <td class="metaisTransition"><b>Zn<sup>30</sup></b><br><a href="https://pt.wikipedia.org/wiki/Zinco" target="_blank">Zinco</a></td>
+            <td class="trasicao"><b>Ga<sup>31</sup></b><br><a href="https://pt.wikipedia.org/wiki/G%C3%A1lio" target="_blank">Gálio</a></td>
+            <td class="semeMetais"><b>Ge<sup>32</sup></b><br><a href="https://pt.wikipedia.org/wiki/Germ%C3%A2nio" target="_blank">Germânio</a></td>
+            <td class="semeMetais"><b>As<sup>33</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ars%C3%AAnio" target="_blank">Arsênio</a></td>
+            <td class="ametais"><b>Se<sup>34</sup></b><br><a href="https://pt.wikipedia.org/wiki/Sel%C3%AAnio" target="_blank">Selênio</a></td>
+            <td class="ametais"><b>Br<sup>35</sup></b><br><a href="https://pt.wikipedia.org/wiki/Bromo" target="_blank">Bromo</a></td>
+            <td class="nobre"><b>Kr<sup>36</sup></b><br><a href="https://pt.wikipedia.org/wiki/Cr%C3%ADpton" target="_blank">Criptônio</a></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td class="alcalinos"><b>Rb<sup>37</sup></b><br><a href="https://pt.wikipedia.org/wiki/Rub%C3%ADdio" target="_blank">Rubídio</a></td>
+            <td class="alcalinosTerra"><b>Sr<sup>38</sup></b><br><a hred="https://pt.wikipedia.org/wiki/Estr%C3%B4ncio" target="_blank">Estrôncio</a></td>
+            <td class="metaisTransition"><b>Y<sup>39</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%8Dtrio" target="_blank">Ítrio</a></td>
+            <td class="metaisTransition"><b>Zr<sup>40</sup></b><br><a href="https://pt.wikipedia.org/wiki/Zirc%C3%B4nio" target="_blank">Zircônio</a></td>
+            <td class="metaisTransition"><b>Nb<sup>41</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ni%C3%B3bio" target="_blank">Nióbio</a></td>
+            <td class="metaisTransition"><b>Mo<sup>42</sup></b><br><a href="https://pt.wikipedia.org/wiki/Molibd%C3%AAnio" target="_blank">Molibdênio</a></td>
+            <td class="metaisTransition"><b>Tc<sup>43</sup></b><br><a href="https://pt.wikipedia.org/wiki/Tecn%C3%A9cio" target="_blank">Tecnécio</a></td>
+            <td class="metaisTransition"><b>Ru<sup>44</sup></b><br><a href="https://pt.wikipedia.org/wiki/Rut%C3%AAnio" target="_blank">Rutênio</a></td>
+            <td class="metaisTransition"><b>Rh<sup>45</sup></b><br><a href="https://pt.wikipedia.org/wiki/R%C3%B3dio" target="_blank">Ródio</a></td>
+            <td class="metaisTransition"><b>Pd<sup>46</sup></b><br><a href="https://pt.wikipedia.org/wiki/Pal%C3%A1dio" target="_blank">Paládio</a></td>
+            <td class="metaisTransition"><b>Ag<sup>47</sup></b><br><a href="https://pt.wikipedia.org/wiki/Prata" target="_blank">Prata</a></td>
+            <td class="metaisTransition"><b>Cd<sup>48</sup></b><br><a href="https://pt.wikipedia.org/wiki/C%C3%A1dmio" target="_blank">Cádmio</a></td>
+            <td class="trasicao"><b>In<sup>49</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%8Dndio_(elemento_qu%C3%ADmico)" target="_blank">Índio</a></td>
+            <td class="trasicao"><b>Sn<sup>50</sup></b><br><a href="https://pt.wikipedia.org/wiki/Estanho" target="_blank">Estanho</a></td>
+            <td class="semeMetais"><b>Sb<sup>51</sup></b><br><a href="https://pt.wikipedia.org/wiki/Antim%C3%B4nio" target="_blank">Antimônio</a></td>
+            <td class="semeMetais"><b>Te<sup>52</sup></b><br><a href="https://pt.wikipedia.org/wiki/Tel%C3%BArio" target="_blank">Telúrio</a></td>
+            <td class="ametais"><b>I<sup>53</sup></b><br><a href="https://pt.wikipedia.org/wiki/Iodo" target="_blank">Iodo</a></td>
+            <td class="nobre"><b>Xe<sup>54</sup></b><br><a href="https://pt.wikipedia.org/wiki/Xen%C3%B4nio" target="_blank">Xenônio</a></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td class="alcalinos"><b>Cs<sup>55</sup></b><br><a href="https://pt.wikipedia.org/wiki/C%C3%A9sio" target="_blank">Césio</a></td>
+            <td class="alcalinosTerra"><b>Ba<sup>56</sup></b><br><a href="https://pt.wikipedia.org/wiki/B%C3%A1rio" target="_blank">Bário</a></td>
+            <td class="elements">57-71</td>
+            <td class="metaisTransition"><b>Hf<sup>72</sup></b><br><a href="https://pt.wikipedia.org/wiki/H%C3%A1fnio" target="_blank">Háfnio</a></td>
+            <td class="metaisTransition"><b>Ta<sup>73</sup></b><br><a href="https://pt.wikipedia.org/wiki/T%C3%A2ntalo_(elemento_qu%C3%ADmico)" target="_blank">Tântalo</a></td>
+            <td class="metaisTransition"><b>W<sup>74</sup></b><br><a href="https://pt.wikipedia.org/wiki/Tungst%C3%AAnio" target="_blank">Tungstênio</a></td>
+            <td class="metaisTransition"><b>Re<sup>75</sup></b><br><a href="https://pt.wikipedia.org/wiki/R%C3%AAnio" target="_blank">Rênio</a></td>
+            <td class="metaisTransition"><b>Os<sup>76</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%93smio" target="_blank">Ósmio</a></td>
+            <td class="metaisTransition"><b>Ir<sup>77</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ir%C3%ADdio" target="_blank">Irídio</a></td>
+            <td class="metaisTransition"><b>Pt<sup>78</sup></b><br><a href="https://pt.wikipedia.org/wiki/Platina" target="_blank">Platina</a></td>
+            <td class="metaisTransition"><b>Au<sup>79</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ouro" target="_blank">Ouro</a></td>
+            <td class="metaisTransition"><b>Hg<sup>80</sup></b><br><a href="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(elemento_qu%C3%ADmico)" target="_blank">Mercúrio</a></td>
+            <td class="trasicao"><b>Tl<sup>81</sup></b><br><a href="https://pt.wikipedia.org/wiki/T%C3%A1lio" target="_blank">Tálio</a></td>
+            <td class="trasicao"><b>Pb<sup>82</sup></b><br><a href="https://pt.wikipedia.org/wiki/Chumbo" target="_blank">Chumbo</a></td>
+            <td class="trasicao"><b>Bi<sup>83</sup></b><br><a href="https://pt.wikipedia.org/wiki/Bismuto" target="_blank">Bismuto</a></td>
+            <td class="trasicao"><b>Po<sup>84</sup></b><br><a href="https://pt.wikipedia.org/wiki/Pol%C3%B4nio" target="_blank">Polônio</a></td>
+            <td class="semeMetais"><b>At<sup>85</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%81stato" target="_blank">Ástato</a></td>
+            <td class="nobre"><b>Rn<sup>86</sup></b><br><a href="https://pt.wikipedia.org/wiki/R%C3%A1don" target="_blank">Radônio</a></td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td class="alcalinos"><b>Fr<sup>87</sup></b><br><a href="https://pt.wikipedia.org/wiki/Fr%C3%A2ncio" target="_blank">Frâncio</a></td>
+            <td class="alcalinosTerra"><b>Ra<sup>88</sup></b><br><a href="https://pt.wikipedia.org/wiki/R%C3%A1dio_(elemento_qu%C3%ADmico)" target="_blank">Rádio</a></td>
+            <td class="elements">89-103</td>
+            <td class="metaisTransition"><b>Rf<sup>104</sup></b><br><a href="https://pt.wikipedia.org/wiki/Rutherf%C3%B3rdio" target="_blank">Rutherfórdio</a></td>
+            <td class="metaisTransition"><b>Db<sup>105</sup></b><br><a href="https://pt.wikipedia.org/wiki/D%C3%BAbnio" target="_blank">Dúbnio</a></td>
+            <td class="metaisTransition"><b>Sg<sup>106</sup></b><br><a href="https://pt.wikipedia.org/wiki/Seab%C3%B3rgio" target="_blank">Seabórgio</a></td>
+            <td class="metaisTransition"><b>Bh<sup>107</sup></b><br><a href="https://pt.wikipedia.org/wiki/B%C3%B3hrio" target="_blank">Bóhrio</a></td>
+            <td class="metaisTransition"><b>Hs<sup>108</sup></b><br><a href="https://pt.wikipedia.org/wiki/H%C3%A1ssio" target="_blank">Hássio</a></td>
+            <td class="sinteticos"><b>Mt<sup>109</sup></b><br><a href="https://pt.wikipedia.org/wiki/Meitn%C3%A9rio" target="_blank">Meitnério</a></td>
+            <td class="sinteticos"><b>Ds<sup>110</sup></b><br><a href="https://pt.wikipedia.org/wiki/Darmst%C3%A1dtio" target="_blank">Darmstádtio</a></td>
+            <td class="sinteticos"><b>Rg<sup>111</sup></b><br><a href="https://pt.wikipedia.org/wiki/Roentg%C3%AAnio" target="_blank">Roentgênio</a></td>
+            <td class="sinteticos"><b>Cn<sup>112</sup></b><br><a href="https://pt.wikipedia.org/wiki/Copern%C3%ADcio" target="_blank">Copernício</a></td>
+            <td class="sinteticos"><b>Nh<sup>113</sup></b><br><a href="https://pt.wikipedia.org/wiki/Nihonium" target="_blank">Nihônio</a></td>
+            <td class="sinteticos"><b>Fi<sup>114</sup></b><br><a href="https://pt.wikipedia.org/wiki/Fler%C3%B3vio" target="_blank">Fleróvio</a></td>
+            <td class="sinteticos"><b>Mc<sup>115</sup></b><br><a href="https://pt.wikipedia.org/wiki/Mosc%C3%B3vio" target="_blank">Moscóvio</a></td>
+            <td class="sinteticos"><b>Lv<sup>116</sup></b><br><a href="https://pt.wikipedia.org/wiki/Liverm%C3%B3rio" target="_blank">Livermório</a></td>
+            <td class="sinteticos"><b>Ts<sup>117</sup></b><br><a href="https://pt.wikipedia.org/wiki/Tenesso" target="_blank">Tennesso</a></td>
+            <td class="sinteticos"><b>Og<sup>118</sup></b><br><a href="https://pt.wikipedia.org/wiki/Oganesson" target="_blank">Oganessônio</a></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="2" >6</th>
+            <th class="elements">Lantanídeos</th>
+            <td class="lantanideos"><b>La<sup>57</sup></b><br><a href="https://pt.wikipedia.org/wiki/Lant%C3%A2nio" target="_blank">Lantânio</a></td>
+            <td class="lantanideos"><B>Ce<sup>58</sup></B><br><a href="https://pt.wikipedia.org/wiki/C%C3%A9rio" target="_blank">Cério</a></td>
+            <td class="lantanideos"><b>Pr<sup>59</sup></b><br><a href="https://pt.wikipedia.org/wiki/Praseod%C3%ADmio" target="_blank">Praseodímio</a></td>
+            <td class="lantanideos"><b>Nd<sup>60</sup></b><br><a href="https://pt.wikipedia.org/wiki/Neod%C3%ADmio" target="_blank">Neodímio</a></td>
+            <td class="lantanideos"><b>Pm<sup>61</sup></b><br><a href="https://pt.wikipedia.org/wiki/Prom%C3%A9cio" target="_blank">Promécio</a></td>
+            <td class="lantanideos"><b>Sm<sup>62</sup></b><br><a href="https://pt.wikipedia.org/wiki/Sam%C3%A1rio" target="_blank">Samário</a></td>
+            <td class="lantanideos"><b>Eu<sup>63</sup></b><br><a href="https://pt.wikipedia.org/wiki/Eur%C3%B3pio" target="_blank">Európio</a></td>
+            <td class="lantanideos"><b>Gb<sup>64</sup></b><br><a href="https://pt.wikipedia.org/wiki/Gadol%C3%ADnio" target="_blank">Gadolínio</a></td>
+            <td class="lantanideos"><b>Tb<sup>65</sup></b><br><a href="https://pt.wikipedia.org/wiki/T%C3%A9rbio" target="_blank">Térbio</a></td>
+            <td class="lantanideos"><b>Dy<sup>66</sup></b><br><a href="https://pt.wikipedia.org/wiki/Dispr%C3%B3sio" target="_blank">Disprósio</a></td>
+            <td class="lantanideos"><b>Ho<sup>67</sup></b><br><a href="https://pt.wikipedia.org/wiki/H%C3%B3lmio" target="_blank">Hólmio</a></td>
+            <td class="lantanideos"><b>Er<sup>68</sup></b><br><a href="https://pt.wikipedia.org/wiki/%C3%89rbio" target="_blank">Érbio</a></td>
+            <td class="lantanideos"><b>Tm<sup>69</sup></b><br><a href="https://pt.wikipedia.org/wiki/T%C3%BAlio" target="_blank">Túlio</a></td>
+            <td class="lantanideos"><b>Yb<sup>70</sup></b><br><a href="https://pt.wikipedia.org/wiki/It%C3%A9rbio" target="_blank">Itérbio</a></td>
+            <td class="lantanideos"><b>Lu<sup>71</sup></b><br><a href="https://pt.wikipedia.org/wiki/Lut%C3%A9cio" target="_blank">Lutécio</a></td>
+        </tr>
+        <tr>
+            <th colspan="2">7</th>
+            <th class="elements">Actinídeos</th>
+            <td class="actinideos"><b>Ac<sup>89</sup></b><br><a href="https://pt.wikipedia.org/wiki/Act%C3%ADnio" target="_blank">Actínio</a></td>
+            <td class="actinideos"><b>Th<sup>90</sup></b><br><a href="https://pt.wikipedia.org/wiki/T%C3%B3rio" target="_blank">Tório</a></td>
+            <td class="actinideos"><b>Pa<sup>91</sup></b><br><a href="https://pt.wikipedia.org/wiki/Protact%C3%ADnio" target="_blank">Protactínio</a></td>
+            <td class="actinideos"><b>U<sup>92</sup></b><br><a href="https://pt.wikipedia.org/wiki/Ur%C3%A2nio" target="_blank">Urânio</a></td>
+            <td class="actinideos"><b>Np<sup>93</sup></b><br><a href="https://pt.wikipedia.org/wiki/Nept%C3%BAnio" target="_blank">Neptúnio</a></td>
+            <td class="actinideos"><b>Pu<sup>94</sup></b><br><a href="https://pt.wikipedia.org/wiki/Plut%C3%B3nio" target="_blank">Plutônio</a></td>
+            <td class="actinideos"><b>Am<sup>95</sup></b><br><a href="https://pt.wikipedia.org/wiki/Amer%C3%ADcio" target="_blank">Amerício</a></td>
+            <td class="actinideos"><b>Cm<sup>96</sup></b><br><a href="https://pt.wikipedia.org/wiki/C%C3%BArio" target="_blank">Cúrio</a></td>
+            <td class="actinideos"><b>Bk<sup>97</sup></b><br><a href="https://pt.wikipedia.org/wiki/Berqu%C3%A9lio" target="_blank">Berkélio</a></td>
+            <td class="actinideos"><b>Cf<sup>98</sup></b><br><a href="https://pt.wikipedia.org/wiki/Calif%C3%B3rnio" target="_blank">Califórnio</a></td>
+            <td class="actinideos"><b>Es<sup>99</sup></b><br><a href="https://pt.wikipedia.org/wiki/Einst%C3%AAnio" target="_blank">Einstênio</a></td>
+            <td class="actinideos"><b>Fm<sup>100</sup></b><br><a href="https://pt.wikipedia.org/wiki/F%C3%A9rmio" target="_blank">Férmio</a></td>
+            <td class="actinideos"><b>Md<sup>101</sup></b><br><a href="https://pt.wikipedia.org/wiki/Mendel%C3%A9vio" target="_blank">Mendelévio</a></td>
+            <td class="actinideos"><b>No<sup>102</sup></b><br><a href="https://pt.wikipedia.org/wiki/Nob%C3%A9lio" target="_blank">Nobélio</a></td>
+            <td class="actinideos"><b>Lr<sup>103</sup></b><br><a href="https://pt.wikipedia.org/wiki/Laur%C3%AAncio" target="_blank">Laurêncio</a></td>
+        </tr>
+    </table>
+<br>
+    <div class="legenda">
+        <span class="text">Hidrogênio:<input type="color" value="#32CD32" disabled></span>
+        <span class="text">Alcalinos :<input type="color" value="#ffdb58" disabled></span>
+        <span class="text">Alcalinoterroso :<input type="color" value="#ffff00" disabled></span>
+        <span class="text">Metais de Transição :<input type="color" value="#ffa500" disabled></span>
+        <span class="text">Metais de pôs transição e Semimetais:<input type="color" value="#a2ebeb" disabled><input type="color" value="#26caed" disabled></span>
+        <span class="text">Ametais :<input type="color" value="#99ee99" disabled></span>
+        <span class="text">Gases nobres :<input type="color" value="#a3555e" disabled></span>
+    </div><BR>  
+    <div class="legenda">
+        <span class="text">Lantanídeos :<input type="color" value="#e8dcca" disabled></span>
+        <span class="text">Actinídeos :<input type="color" value="#c3a06e" disabled></span>
+        <span class="text">Sintéticos  :<input type="color" value="#d3d3d3" disabled></span>
+    </div>
+</body> 
+</html>
