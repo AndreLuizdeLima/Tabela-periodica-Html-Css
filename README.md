@@ -7,7 +7,7 @@ poderia gerar complicações.
 
 qualquer duvida pode deixar um comentario.
 
-en --> A periodic table made in html and css.
+EN --> A periodic table made in html and css.
 
 Basically I used table and styled using CSS I preferred to use only one file in this project because it would be used in the classroom and more files
 could lead to complications.
