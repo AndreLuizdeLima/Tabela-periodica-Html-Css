@@ -13,3 +13,6 @@ Basically I used table and styled using CSS I preferred to use only one file in 
 could lead to complications.
 
 Any doubts can leave a comment.
+
+![image](https://user-images.githubusercontent.com/102117666/174685116-1951fd3f-2ee9-4287-86cc-38aafdd4e7fd.png)
+
