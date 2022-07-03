@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    font-size: 200%;
+    height: 50px;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.elements,
+.metaisTransition,
+.hidro,
+.alcalinos,
+.alcalinosTerra,
+.trasicao,
+.ametais,
+.semeMetais,
+.nobre,
+.sinteticos,
+.lantanideos,
+.actinideos {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+.tamanho {
+    width: 20px;
+    height: 20px;
+}
+
+th {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.familia {
+    font-size: 12px;
+
+}
+
+.hidro {
+    background-color: #32CD32;
+}
+
+.hidro:hover {
+    background-color: rgba(50, 205, 50, 0.4)
+}
+
+.alcalinos {
+    background-color: #ffdb58;
+}
+
+.alcalinos:hover {
+    background-color: rgba(255, 216, 88, 0.4)
+}
+
+.alcalinosTerra {
+    background-color: #ffff00;
+}
+
+.alcalinosTerra:hover {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+.trasicao {
+    background-color: #a2ebeb;
+}
+
+.trasicao:hover {
+    background-color: rgba(162, 235, 235, 0.4);
+}
+
+.ametais {
+    background-color: #99ee99;
+}
+
+.ametais:hover {
+    background-color: rgba(144, 238, 144, 0.4);
+}
+
+.semeMetais {
+    background-color: #26caed;
+}
+
+.semeMetais:hover {
+    background-color: rgba(38, 202, 237, 0.4)
+}
+
+.nobre {
+    background-color: #a3555e;
+}
+
+.nobre:hover {
+    background-color: rgba(163, 85, 94, 0.4)
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.metaisTransition {
+    background-color: #ffa500;
+}
+
+.metaisTransition:hover {
+    background-color: rgba(255, 165, 0, 0.4)
+}
+
+.sinteticos {
+    background-color: #d3d3d3;
+}
+
+.sinteticos:hover {
+    background-color: rgba(211, 211, 211, 0.4)
+}
+
+.lantanideos {
+    background-color: #e8dcca;
+}
+
+.lantanideos {
+    background-color: rgba(232, 220, 202, 0.4);
+}
+
+.actinideos {
+    background-color: #c3a06e;
+}
+
+.actinideos:hover {
+    background-color: rgba(195, 160, 110, 0.4)
+}
+
+input {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.text {
+    margin-left: 30px;
+}
+
+.legenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
